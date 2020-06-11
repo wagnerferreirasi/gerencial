@@ -15,22 +15,27 @@
 </head>
 
 <body class="bg-light">
-    <div class="card card-login shadow border-0 text-center box-shadow">
+    <div class="card card-login border-0 shadow text-center">
         <img class="card-img-top" src="assets/logo-horizontal.png" alt="logo Ferreira S.I">
         <div class="card-body">
             <form method="POST" action="">
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
                 </div>
                 <div class="form-group">
                     <label for="senha">Senha</label>
-                    <input type="password" class="form-control" id="senha">
+                    <input type="password" class="form-control" id="senha" required>
                 </div>
                 <button type="submit" class="btn btn-info mt-4 mb-4">Entrar</button>
             </form>
         </div>
       </div>
+      <footer class="footer bg-info">
+          <div class="container text-center">
+            <p class="small text-light"><strong>Ferreira S.I</strong> - Todos os direitos reservados!</p>
+          </div>
+      </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
