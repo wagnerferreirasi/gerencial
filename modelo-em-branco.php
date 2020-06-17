@@ -1,3 +1,7 @@
+<?php
+session_start();
+include_once('includes/mysql.php');
+?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -15,7 +19,8 @@
 </head>
 
 <body class="bg-light">
-    
+<?php include_once('nav-bar.php'); ?>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
