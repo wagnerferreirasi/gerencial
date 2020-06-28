@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-gradient-info">
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-info">
     <a class="navbar-brand h1 mb-0" href="#">FERREIRA S.I</a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mainMenu">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -48,7 +48,7 @@
                 <a class="nav-link" href="#"><i class="fa fa-cloud-download" aria-hidden="true"></i> Baixar Pagamentos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> SAIR</a>
+                <a class="nav-link" href="includes/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i> SAIR</a>
             </li>
         </ul>
     </div>

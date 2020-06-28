@@ -20,6 +20,14 @@ include_once('includes/mysql.php');
 
 <body class="bg-light">
     <?php include_once('nav-bar.php'); ?>
+    <?php if(isset($_SESSION['usuNome'])): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong><?php echo $_SESSION['usuNome']; ?></strong> - Bem vindo ao Gerencial da Ferreira S.I
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php endif; ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
