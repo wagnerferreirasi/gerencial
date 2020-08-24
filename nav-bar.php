@@ -9,21 +9,17 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-users" aria-hidden="true"></i> Clientes</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="cad-novo-cliente.php"><i class="fa fa-user-plus" aria-hidden="true"></i> Cadastrar</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Editar</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-search" aria-hidden="true"></i> Buscar</a>
+                    <a class="dropdown-item" href="listar-cliente.php"><i class="fa fa-search" aria-hidden="true"></i> Buscar</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-file-text-o" aria-hidden="true"></i> O.S</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Gerar O.S</a>
+                    <a class="dropdown-item" href="gerar-os.php"><i class="fa fa-plus-circle" aria-hidden="true"></i> Gerar O.S</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Orçamento</a>
                     <a class="dropdown-item" href="#"><i class="fa fa-search" aria-hidden="true"></i> Buscar</a>
                 </div>

@@ -37,11 +37,11 @@ session_start();
             <form method="POST" action="includes/processaLogin.php">
                 <div class="form-group text-left">
                     <label for="email">E-mail</label>
-                    <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                    <input type="email" name="email" class="form-control" id="email" required>
                 </div>
                 <div class="form-group text-left">
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                    <input type="password" name="senha" class="form-control" id="senha" required>
                 </div>
                 <button type="submit" name="btn-login" class="btn btn-info mt-4 mb-4">Entrar</button>
             </form>

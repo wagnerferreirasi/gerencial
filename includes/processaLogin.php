@@ -1,12 +1,11 @@
 <?php
-require_once 'mysql.php';
 session_start();
 
-
 if (isset($_POST['btn-login'])) {
+    require_once 'mysql.php';
     $email = mysqli_escape_string($conn, $_POST['email']);
     $senha = mysqli_escape_string($conn, $_POST['senha']);
-
+    
     if(empty($email) or empty($senha)):
         header('location: ../index.php');
         $_SESSION['erros'] = "Preencha seu Login e Senha!";
@@ -34,8 +33,10 @@ if (isset($_POST['btn-login'])) {
             $_SESSION['erros'] = "Login não encontrato!";
         endif;
     endif;
-} else {
+} 
+else {
     header('location: ../index.php');
     $_SESSION['erros'] = "Faça login novamente!";
 }
+$conn->close();  
 ?>

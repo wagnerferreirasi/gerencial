@@ -122,11 +122,11 @@ include_once 'includes/mysql.php';
             <div class="col-sm-12">
                 <form action="includes/valida-cad-cliente.php" method="POST" role="form">
                     <div class="form-group row">
-                        <label for="clCNPJ" class="col-sm-2 col-form-label">CNPJ</label>
+                        <label for="clCNPJ" class="col-sm-2 col-form-label">CPF / CNPJ <strong>*</strong></label>
                         <div class="col-sm-5">
                             <input type="text" class="form-control" name="clCNPJ" id="clCNPJ">
                         </div>
-                        <label for="clIE" class="col-sm-1 col-form-label">I.E</label>
+                        <label for="clIE" class="col-sm-1 col-form-label">RG / I.E <strong>*</strong></label>
                         <div class="col-sm-4">
                             <input type="text" class="form-control" name="clIE" id="clIE">
                         </div>
@@ -144,17 +144,17 @@ include_once 'includes/mysql.php';
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="clNome" class="col-sm-2 col-form-label">Nome Responsável</label>
+                        <label for="clNome" class="col-sm-2 col-form-label">Nome Responsável <strong>*</strong></label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="clNome" id="clNome">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="clEmail" class="col-sm-2 col-form-label">E-mail</label>
+                        <label for="clEmail" class="col-sm-2 col-form-label">E-mail <strong>*</strong></label>
                         <div class="col-sm-4">
                             <input type="email" class="form-control" name="clEmail" id="clEmail">
                         </div>
-                        <label for="clTelefone" class="col-sm-1 col-form-label">Telefone</label>
+                        <label for="clTelefone" class="col-sm-1 col-form-label">Fone <strong>*</strong></label>
                         <div class="col-sm-3">
                             <input type="text" class="form-control" name="clTelefone" id="clTelefone">
                         </div>
@@ -164,7 +164,7 @@ include_once 'includes/mysql.php';
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="clCEP" class="col-sm-2 col-form-label">CEP</label>
+                        <label for="clCEP" class="col-sm-2 col-form-label">CEP <strong>*</strong></label>
                         <div class="col-sm-2">
                             <input type="text" value="" class="form-control" name="clCEP" id="clCEP">
                         </div>

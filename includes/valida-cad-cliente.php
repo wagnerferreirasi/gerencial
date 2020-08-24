@@ -6,6 +6,11 @@ if(isset($_POST['enviar-cad-cliente'])){
     $clCNPJ = $_POST['clCNPJ'];
     $clIE = $_POST['clIE'];
     $clRazao = $_POST['clRazao'];
+
+    if(empty($_POST['clRazao'])){
+        $clRazao = $_POST['clNome'];
+    }
+
     $clFantasia = $_POST['clFantasia'];
     $clNome = $_POST['clNome'];
     $clEmail = $_POST['clEmail'];
@@ -24,7 +29,6 @@ if(isset($_POST['enviar-cad-cliente'])){
     // Protect from injection
 $clCNPJ = mysqli_real_escape_string($conn, $clCNPJ);
 
-// Check database to see if email is already subscribed
 
 $sql="SELECT clId FROM tbclientes WHERE clCNPJ='$clCNPJ'";
 $result=$conn->query($sql);
@@ -32,11 +36,11 @@ $row=$result->fetch_assoc();
 
 if($result->num_rows === 1)
 {
-$_SESSION['Alert1'] =  "Empresa já Cadastrada!";
-header("Location: ../cad-novo-cliente.php");
+    $_SESSION['Alert1'] =  "Empresa já Cadastrada!";
+    header("Location: ../cad-novo-cliente.php");
 }else{
-$sql = "INSERT INTO tbclientes (clId, clCNPJ, clIE, clRazao, clFantasia, clNome, clEmail, clTelefone, clRamal, clCEP, clEndereco, clEndNum, clEndComp, clBairro, clCidade, clUF, clDataCad, clAtivo)
-VALUES (NULL, '$clCNPJ', '$clIE', '$clRazao', '$clFantasia', '$clNome', '$clEmail', '$clTelefone', '$clRamal', '$clCEP', '$clEndereco', '$clEndNum', '$clEndComp', '$clBairro', '$clCidade', '$clUF', '$clDataCad', '$clAtivo')";
+    $sql = "INSERT INTO tbclientes (clId, clCNPJ, clIE, clRazao, clFantasia, clNome, clEmail, clTelefone, clRamal, clCEP, clEndereco, clEndNum, clEndComp, clBairro, clCidade, clUF, clDataCad, clAtivo)
+    VALUES (NULL, '$clCNPJ', '$clIE', '$clRazao', '$clFantasia', '$clNome', '$clEmail', '$clTelefone', '$clRamal', '$clCEP', '$clEndereco', '$clEndNum', '$clEndComp', '$clBairro', '$clCidade', '$clUF', '$clDataCad', '$clAtivo')";
 
 if (mysqli_query($conn, $sql) === TRUE) {
     $_SESSION['Alert2'] = "Empresa Cadastrada com Sucesso!";
